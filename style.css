@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "owners", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  letter-spacing: 0.06em;
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100svh;
+  overflow: hidden;
+}
+
+b {
+  font-weight: 550;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 7rem;
+}
+
+p {
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+div, figure {
+  z-index: 1;
+}
+
+#grain {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("noise-256w.png");
+  -webkit-animation: 1.6s steps(1) 0s infinite grain;
+          animation: 1.6s steps(1) 0s infinite grain;
+}
+
+#grain-wrapper {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+  opacity: 0.55;
+  z-index: 100;
+}
+
+@-webkit-keyframes grain {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 50% 50%;
+  }
+  40% {
+    background-position: 25% 25%;
+  }
+  60% {
+    background-position: 75% 75%;
+  }
+  80% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes grain {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 50% 50%;
+  }
+  40% {
+    background-position: 25% 25%;
+  }
+  60% {
+    background-position: 75% 75%;
+  }
+  80% {
+    background-position: 0% 100%;
+  }
+}
+#hero {
+  width: 100%;
+  height: 100svh;
+  background-color: #241C35;
+  position: relative;
+}
+
+#hero .circles {
+  top: 0;
+  height: 100vh;
+}
+
+.circles {
+  overflow: hidden;
+}
+
+#hero-info-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.svg-white {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+#logo {
+  width: 230vw;
+  position: absolute;
+}
+
+#logo path:nth-child(1) {
+  stroke-dasharray: 2150;
+  stroke-dashoffset: 2150;
+  -webkit-animation: path-1 2s linear forwards;
+          animation: path-1 2s linear forwards;
+}
+
+@-webkit-keyframes path-1 {
+  from {
+    stroke-dashoffset: 2150;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes path-1 {
+  from {
+    stroke-dashoffset: 2150;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#logo path:nth-child(2) {
+  stroke-dasharray: 475;
+  stroke-dashoffset: 475;
+  -webkit-animation: path-2 1.2s ease-out forwards;
+          animation: path-2 1.2s ease-out forwards;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+@-webkit-keyframes path-2 {
+  from {
+    stroke-dashoffset: 475;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes path-2 {
+  from {
+    stroke-dashoffset: 475;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#logo path:nth-child(3) {
+  stroke-dasharray: 760;
+  stroke-dashoffset: 760;
+  -webkit-animation: path-3 1.2s ease-out forwards;
+          animation: path-3 1.2s ease-out forwards;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+@-webkit-keyframes path-3 {
+  from {
+    stroke-dashoffset: 760;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes path-3 {
+  from {
+    stroke-dashoffset: 760;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#logo path:nth-child(4) {
+  stroke-dasharray: 2500;
+  stroke-dashoffset: 2500;
+  -webkit-animation: path-4 2.1s linear forwards;
+          animation: path-4 2.1s linear forwards;
+  /* animation-delay: 2.9s; */
+}
+
+@-webkit-keyframes path-4 {
+  from {
+    stroke-dashoffset: 2500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes path-4 {
+  from {
+    stroke-dashoffset: 2500;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#hero-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 12.2vw;
+  left: 15vw;
+  /* font-size: 2.4rem; */
+  font-size: 2.1vw;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+#hero-button svg {
+  stroke-dasharray: 670;
+  stroke-dashoffset: 670;
+  -webkit-animation: button-path 1.5s cubic-bezier(0.72, -0.03, 0.32, 1.04) forwards;
+          animation: button-path 1.5s cubic-bezier(0.72, -0.03, 0.32, 1.04) forwards;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+  width: 23vw;
+}
+
+#hero-button-text-wrapper {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+#hero-button-text-wrapper p {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-animation: button-text 0.7s cubic-bezier(0.07, 0.7, 0.43, 0.99) forwards;
+          animation: button-text 0.7s cubic-bezier(0.07, 0.7, 0.43, 0.99) forwards;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+@-webkit-keyframes button-path {
+  from {
+    stroke-dashoffset: 670;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes button-path {
+  from {
+    stroke-dashoffset: 670;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes button-text {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes button-text {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+#logo, #hero-button {
+  margin-bottom: 25px;
+}
+
+.absolute {
+  position: absolute;
+  inset: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg-shape {
+  z-index: 0;
+}
+
+.bg-shape1 {
+  width: 400px;
+  height: 400px;
+  border-radius: 9999px;
+  position: relative;
+  -webkit-animation: hero-one 10s infinite;
+          animation: hero-one 10s infinite;
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+
+.bg-shape2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  position: relative;
+  -webkit-animation: hero-two 10s infinite;
+          animation: hero-two 10s infinite;
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+
+.bg-shape4 {
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  position: relative;
+  -webkit-animation: hero-three 10s infinite;
+          animation: hero-three 10s infinite;
+  -webkit-filter: blur(90px);
+          filter: blur(90px);
+}
+
+#move {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  position: relative;
+  /* animation: two 10s infinite; */
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: fixed;
+  -webkit-transition: -webkit-filter 0.35s ease;
+  transition: -webkit-filter 0.35s ease;
+  transition: filter 0.35s ease;
+  transition: filter 0.35s ease, -webkit-filter 0.35s ease;
+  z-index: -1 !important;
+}
+
+.unblurred {
+  -webkit-filter: blur(15px) !important;
+          filter: blur(15px) !important;
+}
+
+@-webkit-keyframes hero-one {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -7%;
+    top: 20%;
+  }
+  50% {
+    left: 15%;
+    top: -8%;
+  }
+  75% {
+    left: -10%;
+    top: -15%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes hero-one {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: -7%;
+    top: 20%;
+  }
+  50% {
+    left: 15%;
+    top: -8%;
+  }
+  75% {
+    left: -10%;
+    top: -15%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@-webkit-keyframes hero-two {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  15% {
+    left: -15%;
+    top: 13%;
+  }
+  35% {
+    left: 5%;
+    top: -20%;
+  }
+  80% {
+    left: 10%;
+    top: 10%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes hero-two {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  15% {
+    left: -15%;
+    top: 13%;
+  }
+  35% {
+    left: 5%;
+    top: -20%;
+  }
+  80% {
+    left: 10%;
+    top: 10%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@-webkit-keyframes hero-three {
+  0% {
+    left: 0px;
+    top: -15%;
+  }
+  30% {
+    left: 10%;
+    top: 10%;
+  }
+  45% {
+    left: 7%;
+    top: 0px;
+  }
+  65% {
+    left: -10%;
+    top: -7%;
+  }
+  100% {
+    left: 0px;
+    top: -15%;
+  }
+}
+@keyframes hero-three {
+  0% {
+    left: 0px;
+    top: -15%;
+  }
+  30% {
+    left: 10%;
+    top: 10%;
+  }
+  45% {
+    left: 7%;
+    top: 0px;
+  }
+  65% {
+    left: -10%;
+    top: -7%;
+  }
+  100% {
+    left: 0px;
+    top: -15%;
+  }
+}
+.bg-blue {
+  background-color: #7760AA;
+}
+
+.bg-darkblue {
+  background-color: #241C35;
+}
+
+.bg-red {
+  background-color: #EC6464;
+}
+
+.bg-tan {
+  background-color: #FFE9B5;
+}
