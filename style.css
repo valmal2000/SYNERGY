@@ -150,6 +150,7 @@ div, figure {
 #logo {
   width: 230vw;
   position: absolute;
+  height: auto;
 }
 
 #logo path:nth-child(1) {
@@ -282,6 +283,7 @@ div, figure {
   -webkit-animation-delay: 3.2s;
           animation-delay: 3.2s;
   width: 23vw;
+  height: auto;
 }
 
 #hero-button-text-wrapper {
