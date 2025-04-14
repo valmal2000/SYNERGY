@@ -1194,7 +1194,7 @@ div, figure {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
   position: fixed;
