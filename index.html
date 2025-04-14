@@ -8,19 +8,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.typekit.net/jnl4stw.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
-    <div id="grain-wrapper">
-        <div id="grain"></div>
-    </div>
+    <div id="grain"></div>
+
+
+    <section id="navbar">
+
+        <div id="navbar__img">
+            <div id="grain" class="grain--navbar"></div>
+            <img src="../images/logo.svg">
+        </div>
+        <div id="navbar__links">
+
+            <div id="grain" class="grain--navbar"></div>
+
+            <div>
+                <a href="#hero">Home</a>
+                <!-- <a>Contact</a> -->
+                <a href="https://www.gofundme.com/f/support-fau-graphic-design-class-of-2025" target="_blank">Fundraising</a>
+            </div>
+            <a id="navbar__designers">Designers
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="56.16px" height="25.92px" viewBox="0 0 56.16 25.92" enable-background="new 0 0 56.16 25.92" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                        51.763,5.19 28.045,21.167 4.327,5.19 "/>
+                </svg>
+            </a>
+            <div id="navbar__students-dropdown">
+                <a><span>Designers</span></a>
+                <a>Christina <b>Agront</b></a>
+                <a>Sebastien <b>Belime</b></a>
+                <a>Jacquelyn <b>Calder</b></a>
+                <a>Patrick <b>Calmet</b></a>
+                <a>Teryce <b>Cox</b></a>
+                <a>Matthew <b>Evans</b></a>
+                <a>Dani <b>George</b></a>
+                <a>Cristina <b>Gil</b></a>
+                <a>Elizabeth <b>Hernandez</b></a>
+                <a>Valerie <b>Malbaurn</b></a>
+                <a>Harry <b>Mussotte</b></a>
+                <a>Tate <b>Ridenour</b></a>
+                <div id="grain" class="grain--navbar"></div>
+                <a>Mackenzie <b>Snyder</b></a>
+            </div>
+        </div>
+    </section>
 
     <section id="hero">
         <div class="absolute inset-0 justify-center circles">
-            <div class="bg-shape bg-shape1 bg-red"></div>
-            <div class="bg-shape bg-shape2 bg-tan"></div>
+            <!-- <div class="bg-shape bg-shape1 bg-red"></div> -->
+            <img src="circles/red.png" class="bg-shape bg-shape1">
+            <img src="circles/tan.png" class="bg-shape bg-shape2">
             <div class="bg-shape bg-shape3 bg-tan" id="move"></div>
-            <div class="bg-shape bg-shape4 bg-blue"></div>
+            <img src="circles/blue.png" class="bg-shape bg-shape4">
         </div>
 
         <div id="hero-info-wrapper">
@@ -60,7 +107,7 @@
                         C285.034,78.778,300.784,63.028,300.784,43.779z"/>
                 </svg>
                 <div id="hero-button-text-wrapper">
-                    <p unselectable="on">COMING SOON</p>
+                    <p unselectable="on">SEE OUR WORK</p>
                 </div>
             </div>
 
@@ -68,6 +115,191 @@
 
     </section>
 
+    <section id="info">
+
+        <div id="info__text1" class="info__text">
+            <div>Florida Atlantic University</div>
+            <div>BFA Graphic Design</div>
+            <div>Exhibition</div>
+        </div>
+
+        <div class="info__bar"></div>
+
+        <div id="info__text2" class="info__text">
+            <div>THRIVE</div>
+            <div>Art District</div>
+            <div>701 NW 5th Ave, Suite 1061</div>
+            <div>Fort Lauderdale, FL 33311</div>
+        </div>
+
+        <div class="info__bar"></div>
+
+        <div id="info__text3" class="info__text">
+            <div>THURSDAY</div>
+            <div>4.24.25</div>
+            <div>6-9 pm</div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <figure class="drop-shadow" id="about__image-wrapper" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0">
+            <img id="about__group-img" src="images/group.jpeg">
+            <div id="about__image__shape-wrapper">
+                <!-- <div class="bg-shape bg-shape1 bg-red"></div> -->
+                <img src="circles/red.png" class="img-shape bg-shape1">
+                <img src="circles/tan.png" class="img-shape bg-shape2">
+                <img src="circles/blue.png" class="img-shape bg-shape4">
+            </div>
+        </figure>
+        <div id="about__text">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat, turpis ac tincidunt semper, nunc turpis aliquet ante, a pulvinar tellus purus sed ligula. Fusce pulvinar, orci sed pellentesque bibendum, dolor enim consectetur ex, id porttitor ante purus in neque. In viverra tellus non rhoncus volutpat. Donec imperdiet purus eu ex viverra consectetur. Nunc ipsum purus, ornare nec rutrum in, tempor et magna.</p>
+        </div>
+    </section>
+
+    <section id="students">
+        <div id="students__text">
+            <h1 id="students__header">Designers</h1>
+            <div id="student-name-line-wrapper">
+                <p id="student-name-line"><span id="student-name">[Student's]</span></p>
+            </div>
+            <p id="student-name-line-mobile">View our portfolios</p>
+        </div>
+        <div class="drop-shadow" id="students__grid" data-aos="fade-left" data-aos-duration="1000">
+            <!-- <divclass="students__headshot"></div> -->
+            <div class="students__headshot" onmouseover="updateName(1)" style="border-radius: 30px 0 0 0">
+                <img src="images/headshots/Christina Agront.jpg" class="students__headshot">
+                <p class="students__label">Christina Agront</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(2)">
+                <img src="images/headshots/Sebastien Belime.jpg" class="students__headshot">
+                <p class="students__label">Sebastien Belime</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(3)">
+                <img src="images/headshots/Jacquelyn Calder.jpg" class="students__headshot">
+                <p class="students__label">Jacquelyn Calder</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(4)" style="border-radius: 0 30px 0 0">
+                <img src="images/headshots/Patrick Calmet.jpg" class="students__headshot">
+                <p class="students__label">Patrick Calmet</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+
+            <div class="students__headshot" onmouseover="updateName(5)" style="border-radius: 30px 0 0 30px;">
+                <img src="images/headshots/Teryce Cox.jpg" class="students__headshot">
+                <p class="students__label">Teryce Cox</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(6)">
+                <img src="images/headshots/Matthew Evans.jpg" class="students__headshot">
+                <p class="students__label">Matthew Evans</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(7)">
+                <img src="images/headshots/Danielle George.jpg" class="students__headshot">
+                <p class="students__label">Danielle George</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(8)">
+                <img src="images/headshots/Cristina Gil.jpg" class="students__headshot">
+                <p class="students__label">Cristina Gil</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(9)" style="border-radius: 0 30px 30px 0">
+                <img src="images/headshots/Elizabeth Hernandez.jpg" class="students__headshot">
+                <p class="students__label">Elizabeth Hernandez</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+
+            <div class="students__headshot" onmouseover="updateName(10)" style="border-radius: 0 0 0 30px;">
+                <img src="images/headshots/Valerie Malbaurn.jpg" class="students__headshot">
+                <p class="students__label">Valerie Malbaurn</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(11)">
+                <img src="images/headshots/Harry Mussotte.jpg" class="students__headshot">
+                <p class="students__label">Harry Mussotte</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(12)">
+                <img src="images/headshots/Tate Ridenour.jpg" class="students__headshot">
+                <p class="students__label">Tate Ridenour</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+            <div class="students__headshot" onmouseover="updateName(13)" style="border-radius: 0 0 30px 0">
+                <img src="images/headshots/Mackenzie Snyder.jpg" class="students__headshot">
+                <p class="students__label">Mackenzie Snyder</p>
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="25.846px" height="56.177px" viewBox="0 0 25.846 56.177" enable-background="new 0 0 25.846 56.177" xml:space="preserve">
+                    <polyline fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+                    20.876,52.024 4.899,28.307 20.876,4.589 "/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div id="footer__links-wrapper">
+            <p>&copy; Synergy BFA 2025</p>
+        </div>
+    </section>
+
 </body>
 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="script.js"></script>
+<script>
+    AOS.init({disable: 'mobile'});
+</script>

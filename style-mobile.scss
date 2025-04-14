@@ -54,16 +54,18 @@ $darktan: #ffee56;
         align-items: center;
     }
 
-    #navbar__logo {
-        display: none;
+    #navbar__img {
+        top: 0;
+        padding: 10px;
+        height: 75px;
     }
     #navbar a {
         padding: 10px;
     }
     #navbar__links {
         width: 100vw;
-        overflow: hidden;
         border-radius: 0 0 15px 15px;
+        // justify-content: center;
     }
     #navbar__students-dropdown a {
         padding-top: 6.5px;
@@ -104,12 +106,19 @@ $darktan: #ffee56;
     }
     #about__text {
         padding: 0 40px 40px 40px;
+        text-align: center;
+    }
+    
+    .img-shape {
+        transform: scale(6);
     }
 
 
     #students {
         flex-direction: column;
-        padding: 0;
+        padding: 0 0 40px 0;
+
+        color: black;
     }
     #students__grid {
         width: 100%;
@@ -117,6 +126,8 @@ $darktan: #ffee56;
 
         display: flex;
         flex-direction: column;
+
+        transform: translateX(0px);
     }
     #students__text {
         text-align: center;
@@ -135,8 +146,9 @@ $darktan: #ffee56;
         align-items: center;
         justify-content: space-between;
 
-        background: linear-gradient(90deg, $blue, $darkblue);
-        color: white;
+        // background: linear-gradient(90deg, $blue, $darkblue);
+        background: linear-gradient(90deg, $tan, $blue);
+        // color: black;
     }
     // .students__headshot:hover img {
     //     transform: none;
@@ -146,10 +158,24 @@ $darktan: #ffee56;
     }
     .students__label {
         display: block;
+        color: black;
+
+        font-size: clamp(1.6rem, 0.8rem + 2.4vw, 2.4rem)
     }
     .students__headshot img {
         width: 30vw;
         border-radius: 0 15px 15px 0 !important;
+        flex-shrink: 0;
+    }
+    .students__headshot svg {
+        display: none !important;
+    }
+    .students__headshot {
+        gap: 0;
+    }
+    .students__headshot p {
+        width: 100%;
+        text-align: center;
     }
     @for $i from 1 through 13 {
         .students__headshot:nth-child(#{$i}):before { 
@@ -157,12 +183,14 @@ $darktan: #ffee56;
             left: random(45px) - 22.5px;
         }
     }
-    .students__headshot::before {
+    .students__headshot:before {
         opacity: 0.45;
         height: 75px;
         width: 75px;
         z-index: 2;
         animation: none !important;
+
+        display: none;
     }
     
     .students__headshot:nth-child(1) {
@@ -175,10 +203,50 @@ $darktan: #ffee56;
     .students__headshot svg {
         display: block;
         transform: rotate(180deg) scale(0.5);
+        filter: brightness(0);
     }
 
-    #student-name-line-mobile {
-        display: block;
+    // #student-name-line-mobile {
+    //     display: block;
+    // }
+
+
+    #work__carousel {
+        width: 100%;
+    }
+    .work__carousel__cell {
+        border-radius: 15px;
+        margin: 0 2.5px 0 2.5px;
+        
+        width: calc(33.33vw - 7px);
+        height: calc(33.33vw - 7px);
+    }
+    .flickity-viewport {
+        padding: 5px 0 5px 0;
+        left: 5px;
+    }
+    #work__carousel button:before {
+        // display: none;
+        scale: 0.6;
+    }
+    #work__carousel button {
+        height: 35px;
+        // filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+    }
+    .flickity-prev-next-button.previous {
+        left: 0 !important;
+    }
+    .flickity-prev-next-button.next {
+        right: 0 !important;
+    }
+
+
+    #navbar__students-dropdown a:first-child {
+        padding: 10px 15px 10px 15px;
+    }
+
+    #footer p {
+        padding: 10px;
     }
 
 }
