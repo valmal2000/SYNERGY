@@ -929,6 +929,7 @@ div, figure {
   display: grid;
   -ms-grid-columns: (1fr)[11];
   grid-template-columns: repeat(11, 1fr);
+  max-width: 1000px;
 }
 
 .drop-shadow {
