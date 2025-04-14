@@ -22,6 +22,7 @@ body {
   font-size: 1.6rem;
   width: 100vw;
   overflow-x: hidden;
+  background: linear-gradient(180deg, #241C35, #7760AA, #EC6464, #7760AA);
 }
 
 b {
