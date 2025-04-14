@@ -419,6 +419,9 @@ div, figure {
     filter: grayscale(1);
     border-radius: 0 30px 30px 0;
 }
+#about__text {
+    max-width: 47ch;
+}
 
 .img-shape:nth-child(1) {
     border-radius: 9999px;
