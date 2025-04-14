@@ -61,7 +61,7 @@ onscroll = e => {
     // i -= 2;
     // console.log(i);
 
-    if (scrollDistance() > 0) { navbar.style.opacity = '1'; } else { navbar.style.opacity = '0'; }
+    if (scrollDistance() > 0) { navbar.classList.remove('invisible'); } else { navbar.classList.add('invisible'); }
     // move.style.opacity = 1 - ((scrollDistance() + window.innerHeight) / bodyHeight);
 
     // if (i == 1) {
