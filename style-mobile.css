@@ -2,6 +2,9 @@
   #hero {
     padding-bottom: 25vh;
   }
+  #grain-wrapper {
+    display: none;
+  }
   #logo, #hero-button {
     margin-bottom: 0;
   }
