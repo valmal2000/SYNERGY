@@ -2,6 +2,9 @@
   #hero {
     padding-bottom: 25vh;
   }
+  .bg-shape {
+    animation: none !important;
+  }
   #grain-wrapper {
     display: none;
   }
