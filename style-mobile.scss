@@ -58,6 +58,8 @@ $darktan: #ffee56;
         top: 0;
         padding: 10px;
         height: 75px;
+
+        display: none;
     }
     #navbar a {
         padding: 10px;
@@ -65,6 +67,7 @@ $darktan: #ffee56;
     #navbar__links {
         width: 100vw;
         border-radius: 0 0 15px 15px;
+        left: 0;
         // justify-content: center;
     }
     #navbar__students-dropdown a {

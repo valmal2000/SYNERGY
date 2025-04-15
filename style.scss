@@ -46,13 +46,14 @@ p {
 }
 a {
     text-decoration: none;
+    color: white;
 }
 
 div, figure {
     z-index: 1;
 }
 
-#grain {
+.grain {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -169,8 +170,8 @@ div, figure {
 }
 
 #hero-button {
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     align-items: center;
     justify-content: center;
 
@@ -716,21 +717,21 @@ div, figure {
     transition: background-color 0.5s ease;
     overflow: hidden;
 }
-#navbar__img img {
+#navbar__img svg {
     height: 100%;
     width: auto;
 }
 #navbar__links {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     background-color: $darkblue;
     // border-bottom: 2px solid white;
 
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 172px;
     // z-index: 50;
 
     transition: all 0.5s ease;
@@ -775,8 +776,8 @@ div, figure {
     transition: transform 0.3s ease-out;
 }
 #navbar__designers {
-    // display: flex;
-    display: none;
+    display: flex;
+    // display: none;
     flex-direction: row;
     align-items: center;
     gap: 5px;
@@ -842,8 +843,7 @@ div, figure {
 
 
 #work__carousel {
-    // width: 100%;
-    width: calc(100vw - 15px);
+    width: 100%;
     // overflow: hidden;
     position: relative;
     z-index: 1000;
@@ -948,7 +948,7 @@ div, figure {
     box-sizing:content-box;
 
     position: relative;
-    left: 10px;
+    left: 25px;
 }
 .flickity-button {
     z-index: 2;
@@ -989,17 +989,19 @@ div, figure {
 
 
 #footer {
-    background-color: $blue;
+    background-color: $darkblue;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    padding-bottom: 0;
 }
 #footer__links-wrapper {
     border-radius: 15px 15px 0 0;
     overflow: hidden;
 
-    background-color: $blue;
+    background-color: $darkblue;
     filter: brightness(1.1);
 
     display: flex;
@@ -1009,7 +1011,7 @@ div, figure {
 }
 #footer p {
     position: relative;
-    background-color: $blue !important;
+    background-color: $darkblue !important;
     z-index: 2;
     opacity: 1;
 }

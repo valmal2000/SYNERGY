@@ -1,0 +1,36 @@
+#hero {
+    overflow: hidden;
+}
+
+#hero__credits-info-wrapper {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hero__credits-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero__credits-info__name {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.hero__credits-info__name img {
+    width: 100%;
+    filter: grayscale(1);
+    border-radius: 15px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: clamp(1.8rem, calc(1.6vw + 0.8rem), 2.5rem);
+}
