@@ -2,9 +2,6 @@
   .grid {
     gap: 15px !important;
   }
-  .grain {
-    display: none;
-  }
   section {
     padding: 0 40px 40px 40px;
   }
