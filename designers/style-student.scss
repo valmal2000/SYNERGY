@@ -167,14 +167,15 @@ h3 {
 .work__images > * {
     max-height: 85vh;
     max-width: 75vw;
-    height: auto;
-    width: auto;
+    height: min-content;
+    width: min-content;
 }
 .work__images {
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: fit-content;
+    align-items: center;
 }
 .work__text__content {
     grid-column: 1 / 6;
