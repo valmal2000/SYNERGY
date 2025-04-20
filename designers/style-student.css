@@ -222,8 +222,8 @@ h3 {
 .work__images > * {
   max-height: 85vh;
   max-width: 75vw;
-  height: auto;
-  width: auto;
+  height: min-content;
+  width: min-content;
 }
 
 .work__images {
@@ -238,6 +238,7 @@ h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  align-items: center;
 }
 
 .work__text__content {
