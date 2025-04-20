@@ -367,8 +367,8 @@ h3 {
 }
 
 #view-portfolio__button:hover #view-portfolio__button__image, #view-portfolio__button:hover #view-portfolio__button__text {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #view-portfolio__button:hover #view-portfolio__button__text {
