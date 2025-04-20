@@ -109,6 +109,11 @@ h3 {
     padding: 20px;
     border-radius: 30px;
 }
+
+.quotes__quote {
+    height: fit-content;
+    justify-self: center;
+}
 .quotes__quote:nth-child(1) {
     grid-column: 1 / 7;
 }
@@ -225,7 +230,7 @@ h3 {
 #view-portfolio__button {
     height: 400px;
     width: 100%;
-    color: $darkblue;
+    color: white;
 
     display: flex;
     align-items: center;
