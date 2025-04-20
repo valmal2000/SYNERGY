@@ -1511,7 +1511,7 @@ div, figure {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   position: relative;
-  left: 25px;
+  left: 10px;
 }
 
 .flickity-button {
