@@ -152,6 +152,7 @@ $darktan: #ffee56;
         // background: linear-gradient(90deg, $blue, $darkblue);
         background: linear-gradient(90deg, $tan, $blue);
         // color: black;
+        z-index: 2;
     }
     // .students__headshot:hover img {
     //     transform: none;
