@@ -59,7 +59,7 @@ div, figure {
           animation: 1.6s steps(1) 0s infinite grain;
   pointer-events: none;
   mix-blend-mode: soft-light;
-  opacity: 0.45;
+  opacity: 0.55;
   z-index: 100;
 }
 
