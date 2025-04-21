@@ -6,10 +6,6 @@ $darktan: #ffee56;
 
 @media (max-width:650px) {
 
-  .info__bar {
-    opacity: 0;
-  }
-
     .grid {
         gap: 15px !important;
     }
@@ -93,6 +89,7 @@ $darktan: #ffee56;
     .info__bar {
         width: 100%;
         margin-bottom: 40px;
+      opacity: 0;
     }
 
     #view-portfolio__button__text {
