@@ -211,6 +211,9 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
+
+      padding-top: 70px;
+    padding-bottom: 110px;
 }
 
 .work {
