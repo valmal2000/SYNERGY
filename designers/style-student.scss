@@ -169,11 +169,11 @@ h3 {
 .work__images > * {
     max-height: 85vh;
     max-width: 75vw;
-    height: min-content;
-    width: min-content;
+  height: auto;
+  width: auto;
 }
 .work__images {
-    display: flex;
+      display: inline-flex;
     flex-direction: column;
     gap: 5px;
     width: fit-content;
