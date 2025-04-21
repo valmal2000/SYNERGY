@@ -977,68 +977,68 @@ div, figure {
 }
 
 .students__headshot:nth-child(1):before {
-  top: -13.5px;
-  left: -25.5px;
+  top: -7.5px;
+  left: 3.5px;
 }
 
 .students__headshot:nth-child(2):before {
-  top: -23.5px;
-  left: 35.5px;
+  top: -22.5px;
+  left: 1.5px;
 }
 
 .students__headshot:nth-child(3):before {
-  top: -36.5px;
-  left: -9.5px;
+  top: -0.5px;
+  left: -33.5px;
 }
 
 .students__headshot:nth-child(4):before {
-  top: 31.5px;
-  left: -18.5px;
+  top: -10.5px;
+  left: 29.5px;
 }
 
 .students__headshot:nth-child(5):before {
   top: 14.5px;
-  left: 17.5px;
+  left: 14.5px;
 }
 
 .students__headshot:nth-child(6):before {
-  top: -30.5px;
-  left: 7.5px;
-}
-
-.students__headshot:nth-child(7):before {
-  top: 3.5px;
-  left: -17.5px;
-}
-
-.students__headshot:nth-child(8):before {
-  top: -21.5px;
-  left: -33.5px;
-}
-
-.students__headshot:nth-child(9):before {
-  top: -20.5px;
+  top: 13.5px;
   left: -10.5px;
 }
 
+.students__headshot:nth-child(7):before {
+  top: 7.5px;
+  left: 16.5px;
+}
+
+.students__headshot:nth-child(8):before {
+  top: -17.5px;
+  left: 32.5px;
+}
+
+.students__headshot:nth-child(9):before {
+  top: -13.5px;
+  left: -3.5px;
+}
+
 .students__headshot:nth-child(10):before {
-  top: -34.5px;
-  left: 27.5px;
+  top: -12.5px;
+  left: 10.5px;
 }
 
 .students__headshot:nth-child(11):before {
-  top: -21.5px;
-  left: 34.5px;
+  top: -20.5px;
+  left: -2.5px;
 }
 
 .students__headshot:nth-child(12):before {
-  top: -19.5px;
-  left: 17.5px;
+  top: 35.5px;
+  left: -35.5px;
 }
 
 .students__headshot:nth-child(13):before {
-  top: 15.5px;
-  left: 4.5px;
+  top: -2.5px;
+  left: -19.5px;
 }
 
 .students__headshot:nth-child(3n):before {
@@ -1511,7 +1511,6 @@ div, figure {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   position: relative;
-  left: 10px;
 }
 
 .flickity-button {
