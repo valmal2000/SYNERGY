@@ -1,8 +1,5 @@
 @media (max-width: 650px) {
 
-  .info__bar {
-    opacity: 0;
-  }
   .grid {
     gap: 15px !important;
   }
@@ -84,6 +81,7 @@
   .info__bar {
     width: 100%;
     margin-bottom: 40px;
+    opacity: 0;
   }
   #view-portfolio__button__text {
     opacity: 1;
