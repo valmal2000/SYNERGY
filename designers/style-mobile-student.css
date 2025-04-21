@@ -1,4 +1,8 @@
 @media (max-width: 650px) {
+
+  .info__bar {
+    opacity: 0;
+  }
   .grid {
     gap: 15px !important;
   }
